@@ -1,0 +1,14 @@
+{
+  "name": "dbotjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dbot.js",
+  "scripts": {
+    "start": "node dbot.js"
+  },
+  "author": "akhjd",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
