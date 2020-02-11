@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const PREFIX = '!';
 cient.on('ready', () =>{
     console.log('this bot is online!');
-})
+});
 
 client.on('message', message=>{
 
@@ -16,11 +16,11 @@ client.on('message', message=>{
         break;
 
     }
-})
+});
 
 client.on('message', message=>{
     if(message.content ==="Hey dbot!"){
         message.reply('Hey there!')
     }
-})
+});
 client.login(process.env.BOT_TOKEN);
