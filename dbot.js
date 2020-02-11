@@ -1,26 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const PREFIX = '!';
-cient.on('ready', () =>{
-    console.log('this bot is online!');
+client.on('ready', () => {
+    console.log('I am ready!');
 });
 
-client.on('message', message=>{
-
-    let args = message.content.substring(PREFIX.length).split(" ");
-
-    switch(args[0]){
-        case 'ping':
-            message.channel.sendMessage('pong!');
-        break;
-
-    }
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('pong');
+  	}
 });
 
-client.on('message', message=>{
-    if(message.content ==="Hey dbot!"){
-        message.reply('Hey there!')
-    }
-});
+// THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
