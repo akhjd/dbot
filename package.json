@@ -6,9 +6,7 @@
   "scripts": {
     "start": "node dbot.js"
   },
-  "author": "akhjd",
-  "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.1"
+    "discord.js": "11.5.1"
   }
 }
