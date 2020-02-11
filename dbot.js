@@ -1,13 +1,12 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const client = new Discord.Client();
 
 const PREFIX = '!';
-
-bot.on('ready', () =>{
+cient.on('ready', () =>{
     console.log('this bot is online!');
 })
 
-bot.on('message', message=>{
+client.on('message', message=>{
 
     let args = message.content.substring(PREFIX.length).split(" ");
 
@@ -19,10 +18,9 @@ bot.on('message', message=>{
     }
 })
 
-bot.on('message', message=>{
+client.on('message', message=>{
     if(message.content ==="Hey dbot!"){
         message.reply('Hey there!')
     }
 })
-
-bot.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
